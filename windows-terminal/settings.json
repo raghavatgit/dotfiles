@@ -1,0 +1,15 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "profiles": {
+        "defaults": {
+            "colorScheme": "One Half Dark",
+            "font": {
+                "face": "Consolas",
+                "size": 11
+            },
+            "cursorShape": "bar",
+            "padding": "8, 8, 8, 8"
+        }
+    }
+}
