@@ -1,0 +1,7 @@
+# <type>(<scope>): <short summary>
+# │       │             │
+# │       │             └─> Summary in present tense. Lowercase. No period.
+# │       └─> Scope: winapi, dsa, ui, iot, cloud, deps
+# └─> Type: feat, fix, docs, style, refactor, perf, test, chore
+#
+# Remember: Zero emojis. Use hyphens, pipes, or colons instead of em-dashes.
