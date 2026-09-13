@@ -19,3 +19,24 @@ function cdd { Set-Location "$HOME\Desktop" }
 
 # Clean screen
 Set-Alias -Name c -Value Clear-Host
+
+# Port Inspection and Management Utilities
+function Find-Port {
+    param([Parameter(Mandatory=$true)][int]$Port)
+    Get-NetTCPConnection -LocalPort $Port -ErrorAction SilentlyContinue | 
+        Select-Object LocalAddress, LocalPort, OwningProcess, State
+}
+
+function Kill-Port {
+    param([Parameter(Mandatory=$true)][int]$Port)
+    $processes = Get-NetTCPConnection -LocalPort $Port -ErrorAction SilentlyContinue | 
+        Select-Object -ExpandProperty OwningProcess -Unique
+    if ($processes) {
+        foreach ($pid in $processes) {
+            Write-Host "Stopping process $pid listening on port $Port..." -ForegroundColor Yellow
+            Stop-Process -Id $pid -Force
+        }
+    } else {
+        Write-Host "No active processes found listening on port $Port." -ForegroundColor Green
+    }
+}
