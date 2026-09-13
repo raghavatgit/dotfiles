@@ -1,26 +1,16 @@
-# Dotfiles
+# Developer Dotfiles and System Configuration
 
-Personal developer environment configuration for Windows 10/11, PowerShell, Git, and Windows Terminal.
+A standardized collection of PowerShell profiles, Git shortcuts, developer tooling scripts, and terminal themes configured for Windows environments.
 
 ---
 
 ## Structure
 
-* `powershell/`: Custom functions, productivity aliases, and prompt configurations.
-* `git/`: Global git configuration, standard aliases, and credential helper setup.
-* `windows-terminal/`: Clean typography and dark palette profiles.
-
----
-
-## Quick Setup
-
-### PowerShell Profile
-Symlink or copy the profile to your PowerShell directory:
-```powershell
-Copy-Item powershell/Microsoft.PowerShell_profile.ps1 $PROFILE
-```
-
-### Git Configuration
-```powershell
-git config --global include.path (Resolve-Path git/.gitconfig).Path
-```
+* **`powershell/`**: Windows PowerShell profiles with fast directory jumps, git shortcuts, and port management functions.
+* **`git/`**: Standardized `.gitconfig` aliases and conventional commit templates.
+* **`windows-terminal/`**: Minimal dark-mode terminal color palettes and typography settings.
+* **`scripts/`**: Automation utilities:
+  * `doctor.ps1`: Core toolchain health check (Git, Node, Rust, Python).
+  * `measure-task.ps1`: High-precision Stopwatch execution timer for CLI build processes.
+  * `clean-merged-branches.ps1`: Prunes stale merged local git branches.
+  * `scaffold-project.ps1`: Quick-starter bootstrap with EditorConfig and Gitignore templates.
