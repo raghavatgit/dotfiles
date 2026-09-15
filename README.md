@@ -14,3 +14,5 @@ A standardized collection of PowerShell profiles, Git shortcuts, developer tooli
   * `measure-task.ps1`: High-precision Stopwatch execution timer for CLI build processes.
   * `clean-merged-branches.ps1`: Prunes stale merged local git branches.
   * `scaffold-project.ps1`: Quick-starter bootstrap with EditorConfig and Gitignore templates.
+  * `benchmark-memory.ps1`: Profiles real-time Working Set and Private Byte memory usage.
+  * `quick-git-status.ps1`: Multi-repository workspace status and branch scanner.
