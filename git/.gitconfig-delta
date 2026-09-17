@@ -1,0 +1,21 @@
+# Recommended git-delta syntax highlighting configuration for gitconfig
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    light = false
+    side-by-side = true
+    line-numbers = true
+    syntax-theme = Dracula
+    minus-style = syntax "#450a0a"
+    plus-style = syntax "#052e16"
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
