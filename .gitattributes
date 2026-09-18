@@ -1,0 +1,20 @@
+# Git modern diff and line ending attributes
+* text=auto eol=lf
+
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff2 binary
+
+*.rs diff=rust
+*.ts diff=typescript
+*.tsx diff=typescript
+*.js diff=javascript
+*.json diff=json
+*.md diff=markdown
