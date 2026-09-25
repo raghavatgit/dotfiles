@@ -1,0 +1,30 @@
+# Starship Cross-Shell Prompt Configuration
+# Minimalist, high-performance prompt formatting across zsh, bash, and powershell.
+
+format = """
+[┌─](bold green)$directory$git_branch$git_status$rust$golang$nodejs$cmd_duration
+[└─>](bold green) """
+
+add_newline = false
+
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+style = "bold purple"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "bold red"
+format = "([$all_status$ahead_behind]($style) )"
+
+[cmd_duration]
+min_time = 2_000
+style = "bold yellow"
+format = "took [$duration]($style) "
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
