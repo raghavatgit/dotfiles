@@ -1,0 +1,15 @@
+# Starship Prompt Minimal Configuration
+add_newline = false
+scan_timeout = 10
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+
+[git_branch]
+symbol = "git:"
+style = "bold purple"
+
+[directory]
+truncation_length = 3
+style = "bold cyan"
