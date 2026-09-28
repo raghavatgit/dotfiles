@@ -1,0 +1,7 @@
+{
+  "name": "Pure OLED Black",
+  "background": "#000000",
+  "foreground": "#F5F5F7",
+  "cursorColor": "#3B82F6",
+  "selectionBackground": "#262626"
+}
