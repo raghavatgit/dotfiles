@@ -1,0 +1,4 @@
+[git_status]
+ahead = "[+${count}](bold green)"
+behind = "[-${count}](bold red)"
+diverged = "[><](bold yellow)"
