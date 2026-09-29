@@ -1,0 +1,4 @@
+[
+  { "command": { "action": "splitPane", "split": "auto" }, "keys": "alt+shift+d" },
+  { "command": { "action": "closePane" }, "keys": "ctrl+shift+w" }
+]
