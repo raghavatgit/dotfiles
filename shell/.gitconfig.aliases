@@ -1,0 +1,4 @@
+[alias]
+    lg = log --graph --oneline --decorate --all -n 20
+    unstage = reset HEAD --
+    last = log -1 HEAD --stat
