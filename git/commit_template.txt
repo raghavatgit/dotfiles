@@ -1,0 +1,2 @@
+# Define standard conventional commit message template with type prefixes
+# Specification and parameters for dotfiles
